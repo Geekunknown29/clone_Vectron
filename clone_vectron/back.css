@@ -1,0 +1,256 @@
+*{
+
+
+
+}
+
+body{
+    background-image : url("image_back.webp") ;
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+#navbar{
+    display: flex ;
+    flex-direction: column;
+    color : #8a9193 ;
+    align-items: center;
+    padding-left : 40px ;
+    padding-right : 40px ;
+    justify-content : center ;
+    margin : 50px ;
+    margin-top : 90px ;
+    font-size : 12px ;
+  
+
+}
+
+
+.logo{
+    height: 100%;
+    width: 100%;
+    background-image: url(logo.svg);
+    background-size: contain;
+    color: white;
+    background-color: #0117103d;
+    background-repeat: no-repeat;
+    margin-bottom : 20px ;
+    
+
+}
+
+.nav_left{
+    position : absolute ;
+    left : 0px ;
+    margin-left: 40px;
+    height : 50px ;
+    width : 400px ;
+    margin-bottom: 20px ;
+
+
+}
+
+.nav_right{
+    display: grid;
+    grid-row-gap: 36px;
+    grid-column-gap: 36px;
+    grid-auto-flow: column;
+    justify-content: start;
+    position: absolute;
+    right: 0px; 
+    margin-right : 40px ;
+}
+
+.other{
+    padding-top : 16px ;
+}
+
+.cont {
+    background-color : #ffffff0d ;
+    margin-left: 36px;
+    padding: 16px 32px;
+}
+
+.nav_ele{
+    font-family :Barlow, Arial, sans-serif; 
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.hero_img{
+    opacity: 0.69;
+    height: 100%;
+    width: 50vw;
+    background-image: url(hero_img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: -180px;
+    animation: moveUpDown 3s infinite;
+    z-index: -2;
+}
+
+.hero_text {
+    font-size: 65px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold ;
+    color : white ;
+    z-index : 2 ;
+}
+
+#hero_text{
+    
+    width : 200px;
+    height : 100px ;
+    margin-left : 350px ;
+    margin-top : 151px ;
+
+}
+
+#tri_line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: auto;
+    position: absolute;
+    right: 640px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    gap: 2px;
+    top: 450px;
+
+}
+
+.text_under_hero{
+    color : #8a9193 ;
+}
+
+
+.tri_line{
+    display: flex;
+    flex-direction: row;
+    gap : 10px ;
+    align-items: center;
+    
+}
+
+@keyframes tri_motion_1{
+    from{
+        opacity : 0 ;
+        transform : translateY(30px);
+    }
+    to{
+        opacity : 1.0 ;
+        transform : translateY(0px) ;
+    }
+
+    
+}
+
+._1{
+    animation : tri_motion_1 0.6s ease-in-out ;
+}
+
+
+
+@keyframes tri_motion_2{
+    from{
+        opacity : 0 ;
+        transform : translateY(30px);
+    }
+    to{
+        opacity : 0.5 ;
+        transform : translateY(10px) ;
+    }
+    to{
+        opacity : 1.0 ;
+        transform : translateY(0px) ;
+    }
+    
+}
+
+
+._2 {
+ 
+    animation : tri_motion_2 0.8s ease-in-out ;
+}
+
+@keyframes tri_motion_3{
+    from{
+        opacity : 0 ;
+        transform : translateY(30px);
+    }
+    to{
+        opacity : 0.5 ;
+        transform : translateY(10px) ;
+    }
+    to{
+        opacity : 1.0 ;
+        transform : translateY(0px) ;
+    }
+
+}
+
+._3 {
+ 
+    animation : tri_motion_3 1.0s ease-in-out ;
+}
+
+.primary-color {
+    color: #05f766d0; /* Primary color */
+    background-color :  #05f766d0;
+}
+
+.secondary-color {
+    color: #0000009c;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    height: 80%;
+    width: 11%;
+}
+
+.fa{
+    radius : 500px ;
+}
+
+.up_left{
+    color :#169e49 ;
+    background-color : rgba(255, 255, 255, 0.011) ;
+    font-family: Barlow Condensed, Impact, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.down_left{
+    color : white ;
+    font-size : 82px ;
+    font-weight : 600 ;
+    line-height : 1.1 ;
+    width : 100px ;
+}
+
+.deepest_left{
+    background-color : #169e49 ;
+    color : white ;
+    padding : 14px 27px 14px 27px !; 
+    width : 350px ;
+    font-size: 15px ;
+    align-content : center ;
+    
+
+}
+
